@@ -8,31 +8,79 @@
 /* Цвет основного фона #E5E5E5 */
 /* Цвет вторичного фона #F5F4FA */
 /* Цвет фона в футере #2F303A */
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
+}
 
 /* Тело */
 body {
   background-color: #e5e5e5;
-  color: #212121;
+  color: var(--primary-text-color);
 }
 ul {
   list-style: none;
 }
 /* Шапка */
 .header {
-  background-color: #ffffff;
+  background-color: var(--primary-white-color);
 }
 /* Логотип */
 .logo {
   color: #000000;
 }
+.logo-white {
+  color: #ffffff;
+}
 .part-logo {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 /* Блок навигации */
 .site-nav .link {
-  color: #212121;
+  color: var(--primary-text-color);
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
-  color: #2196f3;
+  color: var(--accent-color);
+}
+.link-nav {
+  color: var(--secondary-text-color);
+}
+.header-link .link-nav:focus,
+.header-link .link-nav:focus {
+  color: var(--accent-color);
+}
+/* Герой */
+.hero {
+  background: #2f303a;
+}
+.hero-title {
+  color: var(--primary-white-color);
+}
+.hero-btn {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+/* Оформление текста*/
+.text-title {
+  color: var(--primary-text-color);
+}
+.text {
+  color: var(--secondary-text-color);
+}
+/* Футер */
+.footer {
+  background-color: #2f303a;
+}
+.address {
+  color: var(--primary-white-color);
+}
+.address-link {
+  color: rgba(255, 255, 255, 0.6);
+}
+/* Фильтр страници портфолио */
+.filter-btn {
+  background-color: #f5f4fa;
 }
